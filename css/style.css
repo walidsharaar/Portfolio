@@ -638,8 +638,8 @@ img{
 
 .card_skill:hover .contentBx{
     display: flex;
-    height: 100%;
-    width: 70%;
+    height: 70%;
+    width: 30%;
     position: relative;
     object-fit: cover;
     text-align: center;
