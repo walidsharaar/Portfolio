@@ -638,8 +638,8 @@ img{
 
 .card_skill:hover .contentBx{
     display: flex;
-    height: 70%;
-    width: 30%;
+    height: 100%;
+    width: 70%;
     position: relative;
     object-fit: cover;
     text-align: center;
@@ -820,7 +820,7 @@ img{
 	transition: all 0.3s;
   background-color: var(--background-body-color);
   border-style: var(--border-style);
-  border-color: var(--border-color); 
+  border-color: var(--border-color);
 }
   @media screen and (max-width: 992px) {
 	.blog-slider {
@@ -998,7 +998,7 @@ img{
 	text-align: center;
 	letter-spacing: 1px;
   }
-  
+
   .blog-slider__button:hover .button__icon{
 	transform: translateX(.25rem);
   }
@@ -1397,7 +1397,7 @@ img{
       }
       .qualification__start-icon{
         position: absolute;
-        transform: translateY(60%);    
+        transform: translateY(60%);
       }
   }
 
@@ -1464,7 +1464,7 @@ img{
       padding-top: 2.5rem;
       column-gap: 2rem;
     }
-    
+
     .home__scroll-button{
       margin-left: 3rem;
     }
