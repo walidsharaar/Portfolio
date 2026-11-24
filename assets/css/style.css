@@ -74,7 +74,6 @@ svg.i { width: 16px; height: 16px; flex: none; }
 .site-header.scrolled { border-bottom-color: var(--line); }
 .nav { display: flex; align-items: center; gap: 16px; height: 60px; }
 .brand { font: 600 15px/1 var(--mono); color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
-.brand span { color: var(--accent); }
 .nav-links { display: flex; gap: 2px; margin-left: auto; }
 .nav-links a { padding: 6px 10px; border-radius: 8px; font-size: 14.5px; color: var(--muted); text-decoration: none; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--soft); }
