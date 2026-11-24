@@ -1,641 +1,506 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- FONTS -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Poppins:wght@200;300;400;600;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-      <link rel="icon" href="favicon.png" type="image/gif">
-      <!-- ICONS -->
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <!-- Argon CSS -->
-      <link type="text/css" href="css/argon-design-system.min.css" rel="stylesheet">
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-      <!-- Personal  Styling -->
-      <link rel="stylesheet" href="css/style.css">
-      <title>Walid Sharaar</title>
-   </head>
-   <body>
-      <!-- ------------- HEADER -------------------->
-      <header class="header" id="header">
-         <nav class="nav container navbar-expand-lg">
-            <a href="#" class="nav__logo navbar-brand ml-3">Walid Sharaar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list grid">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link"> <i class="uil uil-estate nav__icon"></i>Home </a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link"> <i class="uil uil-user nav__icon"></i>About </a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#skills" class="nav__link"> <i class="uil uil-file nav__icon"></i>Skills </a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#qualifications" class="nav__link"> <i class="uil uil-diary nav__icon"></i>Qualification </a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#portfolio" class="nav__link"> <i class="uil uil-scenery nav__icon"></i>Portfolio </a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link"> <i class="uil uil-message nav__icon"></i>Contact Us </a>
-                  </li>
-               </ul>
-               <i class="uil uil-times nav__close" id="nav-close"></i>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Walid Sharaar · Data &amp; Analytics Engineer in Hamburg</title>
+  <meta name="description" content="Walid Sharaar is a Data & Analytics Engineer in Hamburg with 10+ years in data engineering, SQL, data warehousing, BigQuery and Power BI. Open to roles in Germany, Europe and remote.">
+  <meta name="author" content="Walid Sharaar">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://walidsharaar.github.io/Portfolio/">
+  <link rel="alternate" hreflang="en" href="https://walidsharaar.github.io/Portfolio/">
+  <link rel="alternate" hreflang="de" href="https://walidsharaar.github.io/Portfolio/de/">
+  <link rel="alternate" hreflang="x-default" href="https://walidsharaar.github.io/Portfolio/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Walid Sharaar">
+  <meta property="og:title" content="Walid Sharaar · Data & Analytics Engineer">
+  <meta property="og:description" content="Data pipelines, data warehouses, SQL and Power BI reporting. Based in Hamburg, open to roles in Germany, Europe and remote.">
+  <meta property="og:url" content="https://walidsharaar.github.io/Portfolio/">
+  <meta property="og:image" content="https://walidsharaar.github.io/Portfolio/assets/img/og-walid-sharaar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portrait of Walid Sharaar">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="profile:first_name" content="Walid">
+  <meta property="profile:last_name" content="Sharaar">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/walid-sharaar.jpg">
+
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,600,700|jetbrains-mono:500,600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://walidsharaar.github.io/Portfolio/",
+    "inLanguage": "en",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Walid Sharaar",
+      "jobTitle": "Data & Analytics Engineer",
+      "description": "Data & Analytics Engineer with 10+ years in data engineering, data warehousing, SQL and BI reporting.",
+      "url": "https://walidsharaar.github.io/Portfolio/",
+      "image": "https://walidsharaar.github.io/Portfolio/assets/img/walid-sharaar.jpg",
+      "email": "mailto:walidsharaar@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Hamburg", "addressCountry": "DE" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Arden University" },
+        { "@type": "CollegeOrUniversity", "name": "Kabul University" }
+      ],
+      "knowsAbout": ["Data Engineering", "Analytics Engineering", "Data Analytics", "Data Warehousing", "Data Modelling", "SQL", "Google BigQuery", "PostgreSQL", "Python", "ETL", "Power BI", "Tableau"],
+      "knowsLanguage": ["fa", "en", "de", "tr"],
+      "sameAs": ["https://www.linkedin.com/in/walidsharaar/", "https://github.com/walidsharaar"]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icons used on the page (referenced with <use href="#i-…">) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2"/><path d="M14 10h4M14 14h3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top">walid<span>.</span>sharaar</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-tools">
+        <a class="lang-switch" href="de/" hreflang="de" lang="de" title="Deutsche Version">DE</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch light or dark theme">
+          <svg class="i sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="i moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+          <svg class="i" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="label">Data Engineering · Analytics Engineering · Data Analytics</p>
+            <h1>Walid Sharaar</h1>
+            <p class="role">Data &amp; Analytics Engineer</p>
+            <p class="lead">I collect data from different systems, clean and model it, and turn it into reports and dashboards that teams use to make decisions. 10+ years of experience in finance, banking, SaaS and public health.</p>
+            <ul class="hero-meta">
+              <li><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Hamburg, Germany</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-card"/></svg>EU Blue Card</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg>Open to roles in Germany, Europe &amp; remote</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">See my work</a>
+              <a class="btn" href="assets/file/Walid-Sharaar-CV-EN.pdf" download>
+                <svg class="i" aria-hidden="true"><use href="#i-download"/></svg>CV</a>
+              <span class="sep" aria-hidden="true"></span>
+              <a class="icon-btn" href="https://www.linkedin.com/in/walidsharaar/" rel="me noopener" target="_blank" aria-label="LinkedIn">
+                <svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              <a class="icon-btn" href="https://github.com/walidsharaar" rel="me noopener" target="_blank" aria-label="GitHub">
+                <svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a>
+              <a class="icon-btn" href="mailto:walidsharaar@gmail.com" aria-label="Email">
+                <svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></a>
             </div>
-            <div class="nav__btns">
-               <!-- THEME CHANGING BUTTONS --><i data-mode="dark" class="uil uil-moon moon-change-theme" id="theme-button"></i>
-               <div class="nav__toggle" id="nav-toggle"> <i class="uil uil-apps"></i> </div>
+          </div>
+          <div class="portrait">
+            <picture>
+              <source srcset="assets/img/walid-sharaar.webp" type="image/webp">
+              <img src="assets/img/walid-sharaar.jpg" alt="Walid Sharaar, Data &amp; Analytics Engineer" width="600" height="750" fetchpriority="high">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="wrap">
+        <div class="about-text reveal">
+          <div class="section-head">
+            <p class="label">01 — About</p>
+            <h2>A bit about me</h2>
+          </div>
+          <p>I've worked with data since 2013. I started at the Ministry of Public Health in Afghanistan, came to Germany for my master's in data analytics, and since then I've worked with finance and banking data in Hamburg and with Google BigQuery at Semrush.</p>
+          <p>I like working on the whole chain: getting data out of ERP, CRM and other systems, modelling it, checking the quality, and showing it in a way people can use. I write a lot of SQL, and I also spend time with business teams to agree on what each KPI means.</p>
+          <p class="looking">I'm looking for a role in <strong>data analytics</strong> or <strong>analytics and data engineering</strong>, in Germany, elsewhere in Europe, or remote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW I WORK ============ -->
+    <section id="approach">
+      <div class="wrap approach-grid">
+        <div class="reveal">
+          <!-- Working cycle. To add or remove a step: add or remove one <li>,
+               keep the --i numbers in order (0, 1, 2 ...) and set --n to the number of steps. -->
+          <div class="cycle" style="--n: 6" aria-hidden="true">
+            <div class="ring"></div>
+            <div class="orbit"></div>
+            <div class="core"><b>Data</b><span>feedback at every step</span></div>
+            <ol>
+              <li style="--i: 0"><span>01</span>Business understanding</li>
+              <li style="--i: 1"><span>02</span>Data requirements</li>
+              <li style="--i: 2"><span>03</span>Ingest &amp; store</li>
+              <li style="--i: 3"><span>04</span>Model</li>
+              <li style="--i: 4"><span>05</span>Report</li>
+              <li style="--i: 5"><span>06</span>Review &amp; feedback</li>
+            </ol>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="section-head">
+            <p class="label">02 — How I work</p>
+            <h2>My usual process</h2>
+          </div>
+          <ol class="flow">
+            <li><h3>Understand the business</h3><p>Start with the question: which decision should the data support, and who will use it?</p></li>
+            <li><h3>Define data requirements</h3><p>Agree on sources, KPI definitions and quality rules with the business.</p></li>
+            <li><h3>Ingest &amp; store</h3><p>Bring data from different systems into one central store and keep the original values.</p></li>
+            <li><h3>Model</h3><p>Clean, join and structure the data into models that reports can rely on.</p></li>
+            <li><h3>Report</h3><p>Build dashboards and analyses, and check the numbers with the people who use them.</p></li>
+            <li><h3>Review &amp; improve</h3><p>Collect feedback, adjust, and start the next round.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">03 — Skills</p>
+          <h2>Tools I use</h2>
+        </div>
+        <div class="rows reveal">
+          <div class="row"><h3>SQL &amp; databases</h3><p>T-SQL, Google BigQuery, PostgreSQL, MS SQL Server, DuckDB, query tuning</p></div>
+          <div class="row"><h3>Data modelling &amp; warehousing</h3><p>Dimensional modelling (facts and dimensions, star schema), relational database design, data marts, medallion layers, data migration</p></div>
+          <div class="row"><h3>Pipelines &amp; engineering</h3><p>Python (pandas, SQLAlchemy), ETL/ELT, SSIS, REST APIs, Docker, pytest, Git, GitHub Actions</p></div>
+          <div class="row"><h3>BI &amp; reporting</h3><p>Power BI (DAX, Power Query), Tableau, SSRS, SSAS, Streamlit, Plotly, Excel</p></div>
+          <div class="row"><h3>Cloud &amp; business systems</h3><p>Google Cloud (BigQuery), Microsoft Azure, Salesforce, ERP and CRM data</p></div>
+          <div class="row"><h3>Working with the business</h3><p>KPI definition, data quality and governance, requirements, Scrum and Kanban, user training</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">04 — Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <ol class="timeline">
+          <li class="job reveal"><time>2025 – 2026</time><div><h3>Senior BI Engineer</h3><p class="org">Semrush · Remote</p><p>BI solutions and executive dashboards on Google BigQuery for international teams.</p></div></li>
+          <li class="job reveal"><time>2024 – 2025</time><div><h3>Senior Data Engineer</h3><p class="org">LTIMindtree (formerly N+P Syncordis) · Hamburg</p><p>Data warehousing, data modelling and Power BI reporting for banking transformation projects.</p></div></li>
+          <li class="job reveal"><time>2022 – 2023</time><div><h3>Data Engineer</h3><p class="org">LTIMindtree (formerly N+P Syncordis) · Hamburg</p><p>A central reporting platform for global finance, fed by eleven ERP systems.</p></div></li>
+          <li class="job reveal"><time>2021 – 2022</time><div><h3>Data Analyst (freelance)</h3><p class="org">TCS Information Consultancy Service · Hamburg</p><p>Data models, ETL pipelines and Tableau dashboards.</p></div></li>
+          <li class="job reveal"><time>2019</time><div><h3>Data Analyst &amp; Full-Stack Developer (intern)</h3><p class="org">Sanalogi IT Service Producer · Istanbul</p><p>Power BI dashboards on SQL Server and a web API in ASP.NET Core.</p></div></li>
+          <li class="job reveal"><time>2015 – 2018</time><div><h3>Data Manager</h3><p class="org">Ministry of Public Health · Kabul</p><p>National information systems, data marts and KPI reporting on SQL Server, plus data quality and user training.</p></div></li>
+          <li class="job reveal"><time>2014 – 2015</time><div><h3>Data Manager Assistant</h3><p class="org">Ministry of Public Health · Kabul</p><p>Automated Excel and Power BI reports, data cleansing and user support.</p></div></li>
+          <li class="job reveal"><time>2014</time><div><h3>Computer Operator &amp; Administrative Manager</h3><p class="org">Ansar Walid Liquid Gas · Kabul</p><p>Built a central company database and digitised admin workflows with Excel KPI reports.</p></div></li>
+          <li class="job reveal"><time>2013</time><div><h3>Database Developer (intern)</h3><p class="org">Ministry of Public Health · Kabul</p><p>Relational databases in MS Access and SQL for HR processes.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">05 — Projects</p>
+          <h2>Selected work on GitHub</h2>
+          <p>Each project links to its code and documentation.</p>
+        </div>
+
+        <div class="group">
+          <div class="group-head reveal">
+            <h3>Data Engineering</h3>
+            <a href="https://github.com/walidsharaar?tab=repositories" target="_blank" rel="noopener">All repositories →</a>
+          </div>
+          <div class="cards">
+            <article class="card reveal">
+              <div class="card-shot fit"><img src="assets/img/modern-dwh.webp" alt="Data warehouse architecture with bronze, silver and gold layers" width="960" height="495" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/ModernDWH" target="_blank" rel="noopener">Modern SQL Data Warehouse</a></h4>
+                <p>Raw CRM and ERP extracts go through <strong>bronze, silver and gold layers</strong> in SQL Server and end in a <strong>star schema</strong> for analytics. Built on a course project and extended with <strong>data quality checks for each layer</strong>.</p>
+                <p class="stack">T-SQL · SQL Server · ETL · Star schema</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot"><img src="assets/img/nordwerk-report.webp" alt="Power BI group report with revenue, margin and delivery rate" width="960" height="541" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/python_projects/tree/main/045_Nordwerk%20Data%20Platform" target="_blank" rel="noopener">Multi-ERP Data Platform</a></h4>
+                <p>Sales data from <strong>SAP Business One</strong>, a CSV export and an Excel file, combined in PostgreSQL for group reporting in Power BI. <strong>15 quality rules</strong> run on every load, backed by <strong>229 automated tests</strong> in CI.</p>
+                <p class="stack">PostgreSQL · Python · Docker · pytest · GitHub Actions · Power BI</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot illus">
+                <svg viewBox="0 0 480 270" role="img" aria-label="Diagram: REST API to extract, transform and load modules, each with tests, into PostgreSQL">
+                  <text class="s-cap" x="20" y="38">Modular ETL pipeline</text>
+                  <rect class="s-box" x="18" y="98" width="112" height="72" rx="10"/>
+                  <text class="s-t" x="74" y="130" text-anchor="middle">REST API</text>
+                  <text class="s-m" x="74" y="152" text-anchor="middle">JSON</text>
+                  <path class="s-line" d="M130 134H160"/>
+                  <path class="s-acc-f" d="M166 134l-7 -4v8z"/>
+                  <rect class="s-box" x="166" y="76" width="148" height="116" rx="10"/>
+                  <text class="s-t" x="186" y="110">1 extract</text>
+                  <text class="s-t" x="186" y="140">2 transform</text>
+                  <text class="s-t" x="186" y="170">3 load</text>
+                  <path class="s-line" d="M314 134H344"/>
+                  <path class="s-acc-f" d="M350 134l-7 -4v8z"/>
+                  <path class="s-acc-soft" d="M352 108c0-10 108-10 108 0v56c0 10-108 10-108 0z"/>
+                  <ellipse class="s-acc-f" cx="406" cy="108" rx="54" ry="9"/>
+                  <text class="s-t" x="406" y="148" text-anchor="middle">PostgreSQL</text>
+                  <rect class="s-pill" x="104" y="212" width="272" height="34" rx="17"/>
+                  <text class="s-m" x="240" y="234" text-anchor="middle">✓ unit and data quality tests</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/python_projects/tree/main/039_FakeStore" target="_blank" rel="noopener">API to PostgreSQL ETL</a></h4>
+                <p>Pulls data from a <strong>REST API</strong>, flattens the nested JSON and loads it into PostgreSQL. Extract, transform and load are <strong>separate modules with their own tests</strong>, including data quality tests.</p>
+                <p class="stack">Python · pandas · SQLAlchemy · PostgreSQL · pytest</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="group-head reveal">
+            <h3 style="--dot: var(--gold)">Analytics</h3>
+            <a href="https://github.com/walidsharaar/python_projects" target="_blank" rel="noopener">Python &amp; analytics projects →</a>
+          </div>
+          <div class="cards">
+            <article class="card reveal">
+              <div class="card-shot illus">
+                <svg viewBox="0 0 480 270" role="img" aria-label="Funnel: 8,000 leads, 842 closed deals, 45 percent made a first sale">
+                  <text class="s-cap" x="20" y="38">Lead to active seller</text>
+                  <rect class="s-acc-f" x="25.0" y="58" width="430" height="48" rx="9" opacity="1.0"/>
+                  <text class="s-num" x="43.0" y="90">8,000</text>
+                  <text class="s-inv" x="437.0" y="89" text-anchor="end">leads</text>
+                  <rect class="s-acc-f" x="65.0" y="116" width="350" height="48" rx="9" opacity="0.78"/>
+                  <text class="s-num" x="83.0" y="148">842</text>
+                  <text class="s-inv" x="397.0" y="147" text-anchor="end">closed deals</text>
+                  <rect class="s-acc-f" x="105.0" y="174" width="270" height="48" rx="9" opacity="0.56"/>
+                  <text class="s-num" x="123.0" y="206">45 %</text>
+                  <text class="s-inv" x="357.0" y="205" text-anchor="end">made a first sale</text>
+                  <text class="s-m" x="240" y="252" text-anchor="middle">Median 14 days to close · 44 days to first sale</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/python_projects/tree/main/044_Olis%20Market%20Insights" target="_blank" rel="noopener">Marketplace Funnel Analysis</a></h4>
+                <p>Real data on <strong>8,000 leads and 99,000 orders</strong>, from first marketing contact to a seller's first sale. Showed that an apparent <strong>20× jump in conversion</strong> was a tracking gap.</p>
+                <p class="stack">Python · DuckDB · SQL · Streamlit</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot illus">
+                <svg viewBox="0 0 480 270" role="img" aria-label="Diagram: BigQuery data, SQL for cohorts and churn risk, Streamlit cohort view">
+                  <text class="s-cap" x="20" y="38">Engagement → retention → churn risk</text>
+                  <rect class="s-box" x="16" y="100" width="112" height="72" rx="10"/>
+                  <text class="s-t" x="72" y="132" text-anchor="middle">BigQuery</text>
+                  <text class="s-m" x="72" y="154" text-anchor="middle">churn table</text>
+                  <path class="s-line" d="M128 136H144"/>
+                  <path class="s-acc-f" d="M150 136l-7 -4v8z"/>
+                  <rect class="s-box" x="150" y="78" width="138" height="116" rx="10"/>
+                  <text class="s-t" x="166" y="106">SQL</text>
+                  <text class="s-m" x="166" y="132">· cohorts</text>
+                  <text class="s-m" x="166" y="154">· segments</text>
+                  <text class="s-m" x="166" y="176">· churn risk</text>
+                  <path class="s-line" d="M288 136H300"/>
+                  <path class="s-acc-f" d="M306 136l-7 -4v8z"/>
+                  <rect class="s-box" x="306" y="62" width="160" height="148" rx="10"/>
+                  <rect class="s-acc-f" x="320" y="78" width="23" height="19" rx="4" opacity="1.0"/>
+                  <rect class="s-acc-f" x="347" y="78" width="23" height="19" rx="4" opacity="0.84"/>
+                  <rect class="s-acc-f" x="374" y="78" width="23" height="19" rx="4" opacity="0.68"/>
+                  <rect class="s-acc-f" x="401" y="78" width="23" height="19" rx="4" opacity="0.52"/>
+                  <rect class="s-acc-f" x="428" y="78" width="23" height="19" rx="4" opacity="0.36"/>
+                  <rect class="s-acc-f" x="320" y="102" width="23" height="19" rx="4" opacity="0.95"/>
+                  <rect class="s-acc-f" x="347" y="102" width="23" height="19" rx="4" opacity="0.79"/>
+                  <rect class="s-acc-f" x="374" y="102" width="23" height="19" rx="4" opacity="0.63"/>
+                  <rect class="s-acc-f" x="401" y="102" width="23" height="19" rx="4" opacity="0.47"/>
+                  <rect class="s-acc-f" x="320" y="126" width="23" height="19" rx="4" opacity="0.9"/>
+                  <rect class="s-acc-f" x="347" y="126" width="23" height="19" rx="4" opacity="0.74"/>
+                  <rect class="s-acc-f" x="374" y="126" width="23" height="19" rx="4" opacity="0.58"/>
+                  <rect class="s-acc-f" x="320" y="150" width="23" height="19" rx="4" opacity="0.85"/>
+                  <rect class="s-acc-f" x="347" y="150" width="23" height="19" rx="4" opacity="0.69"/>
+                  <rect class="s-acc-f" x="320" y="174" width="23" height="19" rx="4" opacity="0.8"/>
+                  <text class="s-m" x="386" y="236" text-anchor="middle">Streamlit</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/python_projects/tree/main/037_Engagement%20%26%20Retention%20Dashboard" target="_blank" rel="noopener">Engagement &amp; Retention</a></h4>
+                <p><strong>Cohort, engagement and churn-risk analysis</strong> for a B2B SaaS case, with SQL written for a <strong>BigQuery</strong> schema and an interactive dashboard on top.</p>
+                <p class="stack">BigQuery · SQL · Python · Streamlit</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot illus">
+                <svg viewBox="0 0 480 270" role="img" aria-label="Sketch of the multi-page Streamlit marketing app">
+                  <rect class="s-box" x="18" y="22" width="444" height="200" rx="12"/>
+                  <path class="s-line" d="M18 50H462"/>
+                  <circle class="s-dot" cx="38" cy="36" r="5"/>
+                  <circle class="s-dot" cx="54" cy="36" r="5"/>
+                  <circle class="s-dot" cx="70" cy="36" r="5"/>
+                  <path class="s-line" d="M146 50V222"/>
+                  <rect class="s-acc-soft" x="28" y="64" width="108" height="30" rx="7"/>
+                  <text class="s-t" x="40" y="84">Funnel</text>
+                  <text class="s-m" x="40" y="120">Engagement</text>
+                  <text class="s-m" x="40" y="156">Sentiment</text>
+                  <rect class="s-acc-f" x="166" y="68" width="280" height="20" rx="5" opacity="1.0"/>
+                  <rect class="s-acc-f" x="166" y="98" width="214" height="20" rx="5" opacity="0.8"/>
+                  <rect class="s-acc-f" x="166" y="128" width="148" height="20" rx="5" opacity="0.6"/>
+                  <rect class="s-acc-f" x="166" y="158" width="92" height="20" rx="5" opacity="0.4"/>
+                  <rect class="s-pos" x="166" y="194" width="160" height="12" rx="6"/>
+                  <rect class="s-neu" x="330" y="194" width="62" height="12" rx="6"/>
+                  <rect class="s-neg" x="396" y="194" width="50" height="12" rx="6"/>
+                  <text class="s-cap" x="240" y="252" text-anchor="middle">SQL Server → bronze · silver · gold → Streamlit</text>
+                </svg>
+              </div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/python_projects/tree/main/040_ShopEasy%20Marketing%20and%20Sentiment%20Analytics" target="_blank" rel="noopener">Marketing Analytics App</a></h4>
+                <p>A <strong>multi-page Streamlit app</strong> on a layered SQL Server pipeline: conversion funnel, content engagement and <strong>customer sentiment</strong> scored from reviews.</p>
+                <p class="stack">Streamlit · Plotly · Python · SQL Server · NLTK</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="group-head reveal">
+            <h3 style="--dot: var(--bronze)">BI &amp; Reporting</h3>
+            <a href="https://github.com/walidsharaar/Power-Bi-Dashboards" target="_blank" rel="noopener">All Power BI dashboards →</a>
+          </div>
+          <div class="cards two">
+            <article class="card reveal">
+              <div class="card-shot"><img src="assets/img/financial-reporting.webp" alt="Power BI income statement report" width="960" height="555" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/Financial_Reporting" target="_blank" rel="noopener">Financial Reporting</a></h4>
+                <p><strong>Income statement, balance sheet, cash flow</strong> and aged trial balance in one Power BI report, with DAX for every financial measure.</p>
+                <p class="stack">Power BI · DAX · Data modelling</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot"><img src="assets/img/customer-attrition.webp" alt="Power BI customer attrition dashboard" width="960" height="533" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/Power-Bi-Dashboards/tree/master/012_CustomerAttrition" target="_blank" rel="noopener">Customer Attrition</a></h4>
+                <p>Who leaves and why, across <strong>1,869 churned customers</strong>. More than half left <strong>in their first year</strong>, and 89% were on month-to-month contracts.</p>
+                <p class="stack">Power BI · DAX · Power Query</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot"><img src="assets/img/customer-overview.webp" alt="Power BI customer overview dashboard" width="960" height="537" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/Power-Bi-Dashboards/tree/master/001_CustomerOverview" target="_blank" rel="noopener">Customer Overview</a></h4>
+                <p><strong>2,237 customers</strong> segmented by age, income, education and purchase recency, with slicers so marketing can find its target groups.</p>
+                <p class="stack">Power BI · DAX · Segmentation</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card-shot"><img src="assets/img/sales-vs-budget.webp" alt="Power BI sales versus budget dashboard" width="960" height="506" loading="lazy" decoding="async"></div>
+              <div class="card-body">
+                <h4><a href="https://github.com/walidsharaar/Power-Bi-Dashboards/tree/master/007_DataAnalystProject" target="_blank" rel="noopener">Sales vs Budget</a></h4>
+                <p>Internet sales <strong>against budget</strong> by customer, product and city. The data is <strong>cleaned and shaped in SQL</strong> first, then modelled in Power BI.</p>
+                <p class="stack">SQL · Power BI · DAX · Excel</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">06 — Education</p>
+          <h2>Education &amp; certificates</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="reveal">
+            <h3>Certificates</h3>
+            <ul class="list">
+              <li><time>2025</time><span>Data Engineering with SQL, Python &amp; Spark</span></li>
+              <li><time>2025</time><span>The Business Intelligence Analyst Course</span></li>
+              <li><time>2024</time><span>Generative AI Certificate</span></li>
+              <li><time>2022</time><span>Google BigQuery &amp; PostgreSQL for Data Analysis</span></li>
+              <li><time>2016</time><span>Implementing a Data Warehouse, Data Models and Reports in MS SQL</span></li>
+            </ul>
+          </div>
+          <div class="edu-side">
+            <div class="reveal">
+              <h3>Degrees</h3>
+              <ul class="list">
+                <li><time>2021</time><span>MSc Data Analytics &amp; Information Management Systems<small>Arden University, Berlin</small></span></li>
+                <li><time>2013</time><span>BSc Computer Science, Software Engineering<small>Kabul University</small></span></li>
+              </ul>
             </div>
-         </nav>
-      </header>
-      <!-- ============== MAIN =============== -->
-      <main class="main">
-         <!-- ------------- HOME -------------------->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <div class="home__content grid">
-                  <div class="home__social">
-                     <a href="https://www.linkedin.com/in/sharaar/" target="_blank" class="home__social-icon" id="linkedin"> <i class="uil uil-linkedin-alt"></i> </a>
-                     <a href="https://github.com/walidsharaar" target="_blank" class="home__social-icon" id="github"> <i class="uil uil-github-alt"></i> </a>
-                  </div>
-               </div>
-               <div class="home__data">
-                  <small class="home__welcome s-color"> Welcome to my Portfolio! </small>
-                  <h1 class="home__title"> Hey I'm </h1>
-                  <div id="typewriter"></div>
-                  <h3 class="home__subtitle" id="home-bio">
-                     Passionate about data analytics with a master’s degree in
-                     data Analytics and Information Management Systems.
-                  </h3>
-                  <a href="#contact" class="button button--flex">
-                  Contact Me <i class="uil uil-message button__icon"></i>
-                  </a>
-               </div>
+            <div class="reveal">
+              <h3>Languages</h3>
+              <ul class="langs"><li>Farsi</li><li>English</li><li>German</li><li>Turkish</li></ul>
             </div>
-            <div class="home__scroll">
-               <a href="#about" class="home__scroll-button button--flex"> <i class="uil uil-mouse-alt home__scroll-mouse"></i> </a>
-            </div>
-         </section>
-         <!-- ------------- ABOUT ME -------------------->
-         <section class="about section" id="about">
-            <h2 class="section__title">About</h2>
-            <div class="about__container container grid">
-               <div class="about__data">
-                  <p class="about__description" id="home-about"> Adept Data Enthusiast with 5+ years of experience who designed, managed 10+ SQL database projects, Data Mining and Data Visualization. Pursuing opportunities where I can utilize my analytical, and technical skills to solve real life problems related to analyzing a big volume of datasets to draw insights that can help with business decisions. </p>
-               </div>
-               <div class="about__info">
-                  <div> <span class="about__info-title"> +5 </span> <span class="about__info-name"> Years of <br> Experience </span> </div>
-                  <div> <span class="about__info-title"> +10 </span> <span class="about__info-name"> Completed <br> Projects </span> </div>
-                  <div> <span class="about__info-title"> +3 </span> <span class="about__info-name"> Companies <br> Worked </span> </div>
-               </div>
-            </div>
-         </section>
-         <!-- ------------- Skills-------------------->
-         <section class="skills section" id="skills">
-            <h2 class="section__title"> Skillset </h2>
-            <div class="skills__container container grid">
-               <div class="row" id="skillset_container">
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/python-seeklogo.com_sbuevg.svg" alt="Python logo"> </div>
-                        <div class="contentBx">
-                           <h2> Python </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://img.icons8.com/external-itim2101-blue-itim2101/128/000000/external-database-network-technology-itim2101-blue-itim2101.png" alt="SQl logo"> </div>
-                        <div class="contentBx">
-                           <h4> Database</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://img.icons8.com/bubbles/100/000000/analytics.png" alt="Analytic logo"> </div>
-                        <div class="contentBx">
-                           <h4>Analytics </h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://img.icons8.com/dusk/128/000000/power-bi.png" alt="Powerbi logo"> </div>
-                        <div class="contentBx">
-                           <h4>Powerbi </h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel logo"> </div>
-                        <div class="contentBx">
-                           <h2> Excel </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/django-seeklogo.com_uu8wtb.svg" alt="Django logo"> </div>
-                        <div class="contentBx">
-                           <h2> Django </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/HTML_5-595b40b65ba036ed117d4260_fnyo1z.svg" alt="HTML logo"> </div>
-                        <div class="contentBx">
-                           <h2> HTML </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/Css3-595b40b65ba036ed117d3eb8_jiqifm.svg" alt="css logo"> </div>
-                        <div class="contentBx">
-                           <h2> CSS </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831744/skillset%20logos/javascript-seeklogo.com_wthmgd.svg" alt="Javascript logo"> </div>
-                        <div class="contentBx">
-                           <h2> Js </h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="skills__container-card">
-                     <div class="card_skill shadow2">
-                        <div class="imgBx"> <img src="https://res.cloudinary.com/bjha/image/upload/v1627831743/skillset%20logos/git-seeklogo.com_eqv1dl.svg" alt="Git logo"> </div>
-                        <div class="contentBx">
-                           <h2> Git </h2>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!--CV Section--->
-         <section class="cv section">
-            <div class="about__buttons"> <a href="assets/file/WalidSharaarResume.pdf" download="WalidSharaarResume" target="_blank" class="button button--flex">
-               My Resume <i class="uil uil-download-alt button__icon"></i>
-               </a>
-            </div>
-         </section>
-         <!---Qualifications--->
-         <section class="qualification section" id="qualifications">
-            <h2 class="section__title"> Qualification </h2>
-            <span class="section__subtitle"> My Journey </span>
-            <div class="qualification__container container">
-               <div class="row mt-lg-0">
-                  <!-- Experience-->
-                  <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="experience">
-                     <div class="qualification__button button--flex"> <i class="uil uil-briefcase-alt qualification__icon"></i> Experience </div>
-                     <div id="expreience_timeline">
-                        <div class="container py-2">
-                           <!-- Timeline item 1 -->
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    6/2021 - Present
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h6 class="qualification__title"> Data Analytics Capacity Building</h6>
-                                             <p class="qualification__subtitle"> Self Studies</p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> I am deducting time to complete 100 days of python code challenge and performing side project in BI tools using Power Bi, Tableau, and Python library. As well as , delegating time to seek new technologies via Udemy and YouTube and German language. </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    08/2019 - 10/2019
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h6 class="qualification__title"> Full stack developer and Data Analyst Intern</h6>
-                                             <p class="qualification__subtitle"> Sanalogi - Istanbul, Turkey</p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> Developed online registration system using Asp.net core web API, Microsoft SQL Server and implemented Microservices principles. Worked in an agile environment, adopt agile principles, and created visual reports for the systems. Analyzed problems and implement algorithms to solve them. Performed code review and deployment. </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    01/2015 - 08/2018
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h6 class="qualification__title"> Data Manager</h6>
-                                             <p class="qualification__subtitle"> Ministry of Public Health - Kabul, Afghanistan</p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> Designed, and implemented +7 Information management systems using different technologies like MS access VBA, Asp.net MVC, Microsoft SQL Server and business intelligence tools to capture the department workflow. Supported the database design, development, implementation, information storage and retrieval, data flow and mainly analysis activities to develop reports that meet Senior Leader requirements for executive summary level. Improved and enhanced the data architecture of the organization from traditional one. Communicated regularly with technical and operational staff to ensure database integrity and security and analyzed the databases' changes as well as supported the team get insight from the data and plan evidence based. </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    01/2013 - 05/2014
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h6 class="qualification__title"> Database Management Assistant</h6>
-                                             <p class="qualification__subtitle"> Ministry of Public Health - Kabul, Afghanistan</p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> Designed +4 information management systems for corresponding departments to enhance the data flow there. Created reporting tools using MS Excel, Power BI and other reporting tools which increased data culture and data quality up to 70%. Provided onsite assistance to troubleshoot the data collection tools problems. </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__start">
-                                       <i class="uil uil-rocket qualification__start-icon"></i>
-                                       </span>
-                                    </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Education -->
-                  <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="education">
-                     <div class="qualification__button button--flex"> <i class="uil uil-graduation-cap qualification__icon"></i> Education </div>
-                     <div id="education_timeline">
-                        <div class="container py-2">
-                           <!-- Timeline item 1 -->
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    02/2020 - 05/2021
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h3 class="qualification__title"> Master’s in Data Analytics and Information Management Systems </h3>
-                                             <p class="qualification__subtitle"> Arden University - Berlin, Germany </p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> Data Design, Data Handling and Decision Making, Data Visualization and interpretation, Technology Trend and Monitoring, Information Systems and Business Strategy Alignment, Project and Portfolio Management, and Dissertation Project. </p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    03/2010 - 03/2013
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h3 class="qualification__title"> Bachelor’s in Computer Science Specialization in Software Engineering  </h3>
-                                             <p class="qualification__subtitle"> Kabul University - Kabul, Afghanistan </p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> Java Programming, Database Management Systems, Software Engineering, Operating Systems Concepts, Probability and Statistics, Artificial Intelligence, Theory of Computation, Scripting Programming with Python, Distributed Web Application, Computer Graphics, Software Quality, and Project Management</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                                 <h5>
-                                    <span class="badge qualification__calendar">
-                                    <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
-                                    03/1998 - 03/2009
-                                    </span>
-                                 </h5>
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__line"></span> </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                              <!-- Timeline content Events -->
-                              <div class="col py-2">
-                                 <div class="card education-card transparent_card mirror-face shadow2">
-                                    <div class="card-body">
-                                       <div class="task">
-                                          <div class="abstract">
-                                             <h3 class="qualification__title"> Graduated from School  </h3>
-                                             <p class="qualification__subtitle"> Estiqlal High School - Kabul, Afghanistan </p>
-                                          </div>
-                                          <div class="details">
-                                             <p class="qualification__subtitle"> General Studies</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <!-- Timeline design -->
-                              <div class="col-auto text-center flex-column d-sm-flex">
-                                 <div class="row h-50 qualification__journey">
-                                    <div class="col"> <span class="qualification__start">
-                                       <i class="uil uil-rocket qualification__start-icon"></i>
-                                       </span>
-                                    </div>
-                                    <div class="col">&nbsp;</div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- ------------- Portfolio -------------------->
-         <section class="portfolio section" id="portfolio1">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle"> Recent works </span>
-            <div class="blog-slider">
-               <div class="blog-slider__wrp swiper-wrapper">
-                  <!-- For portfolio item 1 -->
-                  <div class="blog-slider__item swiper-slide">
-                     <div class="blog-slider__img">
-                        <img src="images/sales.png" alt="Sales Dashboard ">
-                     </div>
-                     <div class="blog-slider__content">
-                        <span class="blog-slider__code"> July 2021</span>
-                        <div class="blog-slider__title"> Sales Power BI Dashboard</div>
-                        <div class="blog-slider__text"> Developed Internet Sales Report for Imaginary Company.</div>
-                        <a href="https://github.com/walidsharaar/DataAnalystProject" target="_blank" class="button blog-slider__button button--flex">
-                        Source Code
-                        <i class="uil uil-play button__icon"></i>
-                        </a>
-                     </div>
-                  </div>
-                  <!-- For portfolio item 2 -->
-                  <div class="blog-slider__item swiper-slide">
-                     <div class="blog-slider__img">
-                        <img src="images/pomo.PNG" alt="Pomodoro image">
-                     </div>
-                     <div class="blog-slider__content">
-                        <span class="blog-slider__code"> June 2021</span>
-                        <div class="blog-slider__title"> Pomodoro </div>
-                        <div class="blog-slider__text"> Python based Pomodoro timing  </div>
-                        <a href="https://github.com/walidsharaar/pomodoro" target="_blank" class="button blog-slider__button button--flex">
-                        Source Code
-                        <i class="uil uil-play button__icon"></i>
-                        </a>
-                     </div>
-                  </div>
-                  <!-- For portfolio item 3 -->
-                  <div class="blog-slider__item swiper-slide">
-                     <div class="blog-slider__img">
-                        <img src="images/State%20Game.PNG" alt="Game State image">
-                     </div>
-                     <div class="blog-slider__content">
-                        <span class="blog-slider__code"> June 2021</span>
-                        <div class="blog-slider__title"> US State Game </div>
-                        <div class="blog-slider__text"> Inspired from Sporcle.com US State Map Quiz  </div>
-                        <a href="https://github.com/walidsharaar/US_States_Game" target="_blank" class="button blog-slider__button button--flex">
-                        Source Code
-                        <i class="uil uil-play button__icon"></i>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="blog-slider__pagination"></div>
-               </div>
-            </div>
-         </section>
-         <!-----Contact Me ------->
-         <section class="contact section" id="contact">
-            <h2 class="section__title"> Contact Me </h2>
-            <span class="section__subtitle"> Get in touch</span>
-            <div class="row mt-lg-6 justify-content-center contact_mail">
-               <!-- Contact information -->
-               <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
-                  <div class="contact__information">
-                     <i class="uil uil-phone contact__icon"></i>
-                     <div>
-                        <h3 class="contact__title">Have a Call</h3>
-                        <span class="contact__subtitle">+49- 00000000 </span>
-                     </div>
-                  </div>
-                  <div class="contact__information">
-                     <i class="uil uil-envelope contact__icon"></i>
-                     <div>
-                        <h3 class="contact__title">E-mail</h3>
-                        <span class="contact__subtitle">mail@email.com</span>
-                     </div>
-                  </div>
-                  <div class="contact__information">
-                     <i class="uil uil-location-pin-alt contact__icon"></i>
-                     <div>
-                        <h3 class="contact__title">Address</h3>
-                        <span class="contact__subtitle"> Hamburg - Germany</span>
-                     </div>
-                  </div>
-               </div>
-               <!-- FORM -->
-               <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
-                  <h2 class="contact__title"> Want to have a chat - <span> Let's talk </span></h2>
-                  <form action="#" method="POST" class="cf">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <input type="text" name="message-name" class="form-control form__color mb-30 cf" placeholder="Name">
-                        </div>
-                        <div class="col-lg-6">
-                           <input type="email" name="message-email" class="form-control form__color mb-30 cf" placeholder="Email">
-                        </div>
-                        <div class="col-12">
-                           <input type="text" name="message-subject" class="form-control form__color mb-30 cf" placeholder="Subject">
-                        </div>
-                        <div class="col-12">
-                           <textarea name="message" class="form-control form__color mb-30 cf" cols="30" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                           <button type="submit" class="button button--flex send-message form_button">
-                           Send Message
-                           <i class="uil uil-message button__icon"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </section>
-      </main>
-      <!--------------- FOOTER -------------------->
-      <footer class="footer">
-         <div class="footer__bg">
-            <div class="footer__container container grid">
-               <div>
-                  <h1 class="footer__title"> Walid Sharaar </h1>
-                  <span class="footer__subtitle"> Data Analyst and Full Stack developer</span>
-               </div>
-               <ul class="footer__links">
-                  <li> <a href="#about" class="footer__link"> About Me</a> </li>
-                  <li> <a href="#portfolio" class="footer__link"> My Portfolio</a> </li>
-                  <li> <a href="#contact" class="footer__link"> Contact Me</a> </li>
-               </ul>
-               <div class="footer__socials">
-                  <a href="https://www.linkedin.com/in/sharaar/" target="_blank" class="footer__social" id="myLinkedIn"> <i class="uil uil-linkedin-alt"></i> </a>
-                  <a href="https://github.com/walidsharaar" target="_blank" class="footer__social" id="myGithub"> <i class="uil uil-github-alt"></i> </a>
-               </div>
-            </div>
-            <p class="footer__copy">&#169; All rights reserved</p>
-         </div>
-      </footer>
-      <!-- ------------- SCROLL TOP -------------------->
-      <a href="#" class="scrollup" id="scroll-up"> <i class="uil uil-arrow-up scrollup__icon"></i> </a>
-      <!-- Core -->
-      <script src="js/core/jquery.min.js"></script>
-      <script src="js/core/popper.min.js"></script>
-      <script src="js/core/bootstrap.min.js"></script>
-      <!-- Argon JS -->
-      <script src="js/argon-design-system.js"></script>
-      <!--  Typewriter CSS Effect -->
-      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <!-- Self Script -->
-      <script src="js/script.js"></script>
-   </body>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="label">07 — Contact</p>
+          <h2>Let's talk</h2>
+          <p>If you're hiring for a data role or would like to discuss a project, email is the quickest way to reach me.</p>
+        </div>
+        <a class="mail reveal" href="mailto:walidsharaar@gmail.com">walidsharaar@gmail.com</a>
+        <div class="contact-links reveal">
+          <a class="btn" href="https://www.linkedin.com/in/walidsharaar/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/walidsharaar" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="assets/file/Walid-Sharaar-CV-EN.pdf" download>CV (English)</a>
+          <a class="btn" href="assets/file/Walid-Sharaar-Lebenslauf-DE.pdf" download hreflang="de">Lebenslauf (Deutsch)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Walid Sharaar · Hamburg</span>
+      <span>No cookies, no tracking.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
 </html>
